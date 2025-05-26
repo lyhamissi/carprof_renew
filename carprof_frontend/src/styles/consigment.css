@@ -1,0 +1,131 @@
+.consignment-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.consignment-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.consignment-text {
+  position: relative;
+  flex: 1;
+  margin-left: 4rem;
+  min-width: 300px;
+  max-width: 40%;
+  padding-top: 2rem;
+}
+
+.corner {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100px;
+  z-index: 1;
+}
+.corners{
+  position:absolute;
+}
+.corner img {
+  width: 100%;
+  height: auto;
+}
+
+.consignment-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d2d2d;
+  margin-bottom: 1rem;
+  margin-left: -7rem;
+}
+
+.consignment-text h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.consignment-text p {
+  margin-bottom: 1rem;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.8rem;
+}
+
+.contact-button {
+  margin-top: 2rem;
+  background-color: #3b61f6;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #2e4cc4;
+}
+
+.consignment-image {
+  flex: 1;
+  min-width: 320px;
+  text-align: center;
+}
+
+.consignment-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.corner-right {
+  right: 0;
+  left: auto;
+  top: 65rem;
+}
+
+.consignment-sections {
+  background-color: #f8f8f8;
+  padding: 4rem 2rem;
+
+}
+.cards-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+
+}
+
+.cardss{
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 24rem;
+  display: flex;
+  transition: transform 0.3s ease;
+  padding: 2rem 1rem 1rem ;
+}
+.cardss img {
+  width: 5rem;
+  margin-left: 1rem;
+}
+.cardss .left p{
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #444;
+}
+.why-uss{
+  background-color: white;
+  padding: 0rem 0rem;
+}

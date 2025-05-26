@@ -1,0 +1,303 @@
+.sellcar-section {
+    min-height: 70vh;
+    display: flex;
+    border-top: 0.1rem solid #dfdfdf;
+    background-color: #fcfcfb;
+}
+
+.side {
+    display: flex;
+    width: 120%;
+    justify-content: space-between;
+}
+
+.sellcar-content {
+    width: 53%;
+    padding: 2rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8rem;
+}
+
+.image {
+    flex: 1;
+    position: relative;
+    background-image: url("../assets/info12.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95%;
+    padding: 1rem;
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+}
+
+.sellcar-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.sellcar-content p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.offer-form {
+    margin-top: 2rem;
+    width: 25rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.offer-form h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.offer-form input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.5rem;
+    /* font-size: 1rem; */
+}
+
+.reg-section {
+    display: flex;
+    align-items: stretch;
+    /* Ensures all children match height */
+    width: fit-content;
+    /* border: 1px solid #ccc; */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    /* Makes border-radius apply cleanly */
+}
+
+.reg-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    /* padding: 0 0.75rem; */
+}
+
+.reg-icon img {
+    height: 2.7rem;
+    width: 2.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    object-fit: cover;
+}
+
+#reg {
+    border: none;
+    padding: 0 0.75rem;
+    outline: none;
+    height: 2rem;
+    font-size: 1rem;
+    width: 12rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.reg-section button {
+    margin-left: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.reg-section button:hover {
+    background-color: #0056b3;
+}
+
+.offer-form a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #007BFF;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.reason {
+    background-color: white;
+    margin-top: 0rem;
+    height: 50vh;
+}
+
+h2 {
+    padding-top: 2rem;
+    align-items: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 2.5rem;
+}
+
+.card {
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    padding: 1rem;
+}
+
+.top {
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.text h4 {
+    color: #333;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.text p {
+    -webkit-text-fill-color: #888;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    width: 3rem;
+    height: 3rem;
+    color: #92ba1b;
+    text-align: center;
+}
+
+.cards {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 25rem;
+    display: flex;
+    transition: transform 0.3s ease;
+    padding: 1rem 1rem 0rem;
+}
+
+.cards img {
+    width: 5rem;
+    margin-left: 1rem;
+}
+
+.cards .left {
+    width: 25rem;
+}
+
+.cards .left .text h4,
+.cards .left .text p {
+    text-align: left;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 2.5rem;
+
+}
+
+.type {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    background-color: white;
+    padding: 2rem;
+}
+
+.type .lined-text {
+    width: 51%;
+    margin-left: 9rem;
+}
+
+.type .lined-text p {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.type .lined-text h2 {
+    text-align: left;
+}
+
+.type .offer-form {
+    background-color: #f8f8f8;
+}
+
+.support {
+    text-align: center;
+    padding: 2rem 1rem;
+    justify-content: center;
+}
+
+.info {
+    background-color: #335CF1;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 55%;
+    margin: 1rem auto;
+}
+
+.contact-box {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    justify-content: center;
+}
+
+.contact-box img {
+    width: 20px;
+    height: 20px;
+}
